@@ -1,9 +1,0 @@
-fastapi==0.109.2
-uvicorn==0.27.1
-chromadb==0.4.22
-sentence-transformers==2.5.1
-python-multipart==0.0.9
-pydantic==2.6.1
-PyMuPDF==1.23.26
-python-dotenv==1.0.1
-loguru==0.7.2 

@@ -46,3 +46,18 @@ body {
 .collection-badge {
   @apply px-2 py-1 text-xs font-semibold rounded-full;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}

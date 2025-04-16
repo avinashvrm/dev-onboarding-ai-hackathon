@@ -9,6 +9,29 @@ A RAG (Retrieval-Augmented Generation) application using Qdrant as the vector da
 - Query specific collections or search across all collections
 - Fallback to global knowledge when no relevant context is found
 
+## Demo
+
+Here's a screenshot of the working application:
+
+![Working Demo](docs/images/demo.png)
+
+The application provides an intuitive interface for querying your knowledge base across different collections. As shown in the screenshot, users can select specific collections to search from and get detailed responses with source attribution.
+
+## Architecture
+
+The system follows a modern microservices architecture designed for scalability and maintainability:
+
+![Architecture Diagram](docs/images/architecture.png)
+
+Key components:
+- UI Frontend: React-based user interface
+- MCP Server: FastAPI backend server
+- RAG Pipeline: Handles document retrieval and context generation
+- LLM: OpenAI's GPT model for response generation
+- Data Sources: Includes document store and codebase
+- Cron Job: Automated updates of the knowledge base
+- GitHub: Source code and version control
+
 ## Prerequisites
 
 - Python 3.8+
